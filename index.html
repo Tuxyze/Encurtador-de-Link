@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encurtador de URL</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 24px;
+            padding: 16px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>Encurtador de URL</h1>
+    <div class="form-group">
+        <label for="urlInput">URL original</label>
+        <input id="urlInput" type="text" placeholder="Cole a URL aqui" />
+    </div>
+    <button id="shortenButton" type="button">Encurtar</button>
+    <div id="result">O resultado aparecerá aqui.</div>
+</body>
+</html>
